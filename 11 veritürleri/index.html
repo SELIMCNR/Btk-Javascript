@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <meta http-equiv="content-type" content="text/html ; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+        var isim="Selim";/* string*/
+        var sayi=1; /*sayi int*/
+        var mantıksal=true; /*boolean*/
+        var isimler=["Selim","Yusuf"]; /*diziler arrays*/
+        var nesneler=new Object(); /*objeler (nesneler)*/
+        var tanimsiz ; /*undefined (tanımsız)*/
+        var bos = ""; /*undefined (boş tanım yok) null string döndürür*/
+        
+       document.write( typeof(bos));
+
+        var depo1 = isim + " : " + typeof(isim); 
+        document.write(depo1 + "<br/>")
+        document.write(isim + ": " + typeof(isim) + "<br/> <br/>");
+
+        var depo2= sayi + " : " + typeof(sayi);
+        document.write(depo2 + "<br/>");
+        document.write(sayi + " : " + typeof(sayi) + "<br/> <br/>");
+
+        var depo3= mantıksal + ": " + typeof(mantıksal);
+        document.write(depo3 + "<br /> ");
+        document.write(mantıksal + " : " + typeof(mantıksal) + "<br/> <br/> ");
+
+        var depo4=isimler + ": " + typeof(isimler);
+        document.write(depo4 + "<br/><br/>");
+        document.write(isimler + ": "+ typeof(isimler));
+
+        var depo5=nesneler + ": "+ typeof(nesneler);
+        document.write(depo5 + "<br/><br/>");
+        document.write(nesneler + ": "+ typeof(nesneler));
+
+        var depo6=tanimsiz + ": "+ typeof(tanimsiz);
+        document.write(depo6 + "<br/> <br/>");
+        document.write(tanimsiz + ": " + typeof(tanimsiz));
+        
+        var depo7=bos + ": " + typeof(bos);
+        document.write(depo7 + "<br/> <br/>")
+        document.write(bos + ": " + typeof(bos));
+
+        /* 2. gösterimi */
+        document.write(typeof nesneler);
+        document.write(typeof ("volkan")); /*değişkensiz gösterimi*/
+        /*3*/bos
+
+</script>
+  </body>
+</html>

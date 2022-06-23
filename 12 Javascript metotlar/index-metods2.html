@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html ; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" href="" />
+        <title>Javascript</title>
+    </head>
+    <body>
+        <script type="text/javascript" language="javascript">
+            /* String() : Mutlak olarak string türünde düz bir metne çeviriyor */
+       var bir1 = Boolean(0);
+       var iki2 = Boolean(1);
+       var uc3 = 8;
+       var dort4 = 8.55;
+       var bes5 = ["Selim", "Hakan"];
+       var altı6 = "";
+       var yedi7 = new Date() ;
+       
+
+       document.write(typeof bir1+":"+bir1 + "<br />");
+       document.write(typeof iki2+":"+iki2 + "<br />");
+       document.write(typeof uc3+":"+uc3 + "<br />");
+       document.write(typeof dort4+":"+dort4 + "<br />");
+       document.write(typeof bes5+":"+bes5 + "<br />");
+       document.write(typeof altı6+":"+altı6 + "<br />");
+       document.write(typeof yedi7+":"+yedi7 + "<br /> <br />");
+
+       var yenibir= String(bir1);
+       var yeniiki= String(iki2);
+       var yeniuc= String(uc3);
+       var yenidort= String(dort4);
+       var yenibes= String(bes5);
+       var yenialtı= String(altı6);
+       var yeniyedi= String(yedi7);
+
+       document.write(typeof yenibir+":"+yenibir + "<br />");
+       document.write(typeof yeniiki+":"+yeniiki + "<br />");
+       document.write(typeof yeniuc+":"+yeniuc + "<br />");
+       document.write(typeof yenidort+":"+yenidort + "<br />");
+       document.write(typeof yenibes+":"+yenibes + "<br />");
+       document.write(typeof yenialtı+":"+yenialtı + "<br />");
+       document.write(typeof yeniyedi+":"+yeniyedi + "<br />");
+       
+       // Number () : Değişken içeriğini mutlak olarak Number (sayı) veri türüne dönüştürür.
+       
+       var bir = true;
+       var iki = false;
+       var uc = "8";
+       var dort ="8.5";
+       var bes = new Date();
+       var alti = "";
+       var yedi ;
+
+       document.write(typeof (bir) +":"+bir + "<br />")
+       document.write(typeof(iki) +":"+iki+"<br />")
+       document.write(typeof(uc)+":"+ uc +"<br />")
+       document.write(typeof(dort)+":"+ dort+ "<br />")
+       document.write(typeof(bes) +":"+bes+ "<br /> <br/>")
+       document.write(typeof(alti)+":"+ alti+ "<br />")
+       document.write(typeof(yedi) +":"+yedi+ "<br /> <br/>")
+       
+       var sonuca = Number(bir);
+       var sonucb=Number(iki);
+       var sonucc=Number(uc);
+       var sonucd=Number(dort);
+       var sonuce=Number(bes);
+       var sonucf=Number(alti);
+       var sonucg=Number(yedi);     
+
+       
+       document.write(typeof (sonuca) +":"+sonuca + "<br />")
+       document.write(typeof(sonucb) +":"+sonucb+"<br />")
+       document.write(typeof(sonucc)+":"+ sonucc +"<br />")
+       document.write(typeof(sonucd)+":"+ sonucd+ "<br />")
+       document.write(typeof(sonuce) +":"+sonuce+ "<br />")
+       document.write(typeof(sonucf)+":"+ sonucf+ "<br />")
+       document.write(typeof(sonucg) +":"+sonucg+ "<br />")
+
+       // value of () : aynı değeri aynisi gibi yazdırıyor
+       
+       var a1=1;
+       var a2="2";
+       
+       document.write(typeof a1 +":"+a1 +"<br/> ")
+       document.write(typeof a2 + ":"+a2+"<br/>")
+
+       var soa1=a1.valueOf();
+       var soa2=a2.valueOf();
+       
+       document.write(typeof soa1 + ":"+soa1+"<br/>")
+       document.write(typeof soa2+":"+a2+"<br />")
+       
+       // indexof() : değişkenin indis değerini bellekte yerini döndürür.
+       
+       var metin = "Javascript eğitm seti script script ";
+       document.write(metin + "<br/>");
+
+       var sonuc10 = metin.indexOf("eğitm");
+       var sonuc11 = metin.indexOf("eğitm",15);
+       document.write("index numaras : " + sonuc10 );
+       document.write("index numaras : " + sonuc10 + "<br/>"); 
+
+       // lastindexof() : en sonda indisi döndürür.
+       var sonuc40 =metin.lastIndexOf("script");
+       document.write("index numarası : " + sonuc40);
+       var sonuc40 =metin.lastIndexOf("script",32);
+       document.write("index numarası : " + sonuc40);
+       
+       /*search() : kendisine verilen değeri arar ve indisini döndürür*/
+       /*i        : İçeriği küçük büyük harf olmasına bakmadan düzenler*/     
+       
+       var metin ="JavaSCript dünya üzerinde en yaygın olaral kullanılan bir script dilid.";
+       document.write(metin+"<br />");
+
+       var islem = metin.search("script");
+       var islem = metin.search(/script/i);
+       document.write(islem+"<br />");
+
+       /*İncludes () : Kendisine parametre olarak verilen değer doğrultusunda değişken içerini kontrol ede ve boolean türünde sonuç verir.*/
+       var metin = "Javascript eğitim seti"; 
+       document.write(metin+"<br />");
+
+       var islem = metin.includes("seti"+"<br />");
+       document.write(islem);     
+
+       var islem = metin.includes("PHP"+"<br />");
+       document.write(islem);     
+
+       /*startswith ()   : Kendisine verilen parametrede kontrol ederek boolean veri türü sonuç verir ne ile başlıyor*/
+       var metin = "<br />"+"Javascript eğitim seti";
+       document.write(metin); 
+       
+       var sonuc = metin.startsWith("<br/>"+"Javascript");
+       document.write(sonuc);
+   
+
+       /*endswith()   : Kendisine verilen parametre doğrultusunda içeriğin ne ile bittiğin kontrol eder.*/
+       var metin ="<br />"+ "Javascrip Eğitim seti"+"<br />";
+       document.write(metin);
+       
+       var sonuc = metin.endsWith("<br />"+"seti");
+       document.write(sonuc);     
+       
+       /*match() : Kendisine verilen parametrede değer var ise yeni değişkende değeri tutar*/
+       /*g    : İçeriğin tamamı üzerine çalışmasını sağlar*/
+       /*i    : İçeriğin büyük küçük harf olmasına bakmaz*/
+       var metin ="<br />"+ "Javascript Eğitim seti javascript javascript"+"<br/>";
+       document.write(metin);
+       
+       var sonuc = metin.match("Javascript");
+       document.write(sonuc);
+
+       var sonuc = metin.match("<br />"+"abc" +"<br />");
+       document.write(sonuc);
+       var sonuc = metin.match("<br />"+/javascript/g +"<br />");
+       document.write(sonuc);
+       var sonuc = metin.match("<br />"+/JAVA/i +"<br />");
+       document.write(sonuc);
+       var sonuc = metin.match("<br />"+/Javascript/gi +"<br />");
+       document.write(sonuc);
+
+       /* replace ()  : Kendisine verilecel olan parametreler doğrultusunda değişken içeriğini değiştirir ve yeni değeri yazar*/
+       /*1.parametre : Değişecek içerik.
+        2.parametre : Güncel içerik*/
+        /*g    : İçeriğin tamamı üzerine çalışmasını sağlar*/
+       /*i    : İçeriğin büyük küçük harf olmasına bakmaz*/
+        var metin = "Dünyada en  en en yaygın olarak kullanılan dil javascript";
+        document.write(metin)
+        var sonuc = metin.replace("en","PHP");
+        var sonuc = metin.replace(/en/g,"PHP");
+        var sonuc = metin.replace(/En/i,"PHP");
+        var sonuc = metin.replace(/En/gi,"PHP");/*her iki işlemide yapar*/
+        document.write(sonuc); 
+        /*split()   : Değişken içerini bölümler ve bölümlerden dizi oluşturur.*/
+        var metin = "Volkan Alakent Javascript Eğitim Seti" ;
+        document.write("<br />"+typeof metin +"<br />"+ "<br />");
+        document.write(metin[2]);/*Stringin 2.karakteri alındı*/
+        var sonuc = metin.split(); /*İçerik bir dizi oldu*/
+        document.write(typeof sonuc);   
+       
+        var sonuc = metin.split(" ");
+        var sonuc = metin.split("a",3); /*dizinin 3.karakteri alındı*/
+        var sonuc = metin.split(" ");
+        document.write(sonuc);        
+        document.write(sonuc[2]);    
+
+        // localcompare():Parametre olarak verilen değişkenin  yazdırır
+        var icerikbir = "abd";
+        var icerikiki = "abc";
+        document.write(icerikbir);
+        document.write(icerikiki);
+        var sonuc = icerikbir.localeCompare(icerikiki);
+        document.write("<br />"+sonuc);
+        var icerikbir = "abc";
+        var icerikiki = "abc";
+        document.write(icerikbir);
+        document.write(icerikiki);
+        var sonuc = icerikbir.localeCompare(icerikiki);
+        document.write("<br />"+sonuc);
+        var icerikbir = "abc";
+        var icerikiki = "abd";
+        document.write("<br />"+icerikbir);
+        document.write("<br />"+icerikiki);
+        var sonuc = icerikbir.localeCompare(icerikiki);
+        document.write("<br />"+sonuc);
+      /*charAt()   : değişken içeriğinde karakterleri yazdırır.*/
+        var icerik = "Volkan Alakent";
+        document.write("<br />"+icerik);
+        
+        var sonuc = icerik.charAt(0);
+        document.write("<br />İçindeki 0.karakteri:"+sonuc);
+        var sonuc = icerik.charAt(1);
+        document.write("<br />İçindeki 1.karakteri:"+sonuc);
+        var sonuc = icerik.charAt(2);
+        document.write("<br />İçindeki 2.karakteri:"+sonuc);
+        var sonuc = icerik.charAt(3);
+        document.write("<br />İçindeki 3.karakteri:"+sonuc);
+        var sonuc = icerik.charAt(4);
+        document.write("<br />İçindeki 4.karakteri:"+sonuc);
+        var sonuc = icerik.charAt(5);
+        document.write("<br />İçindeki 5.karakteri:"+sonuc);
+        var sonuc = icerik.charAt(6);
+        document.write("<br />İçindeki 6.karakteri:"+sonuc);
+        var sonuc = icerik.charAt(7);
+        document.write("<br />İçindeki 7.karakteri:"+sonuc);
+        var sonuc = icerik.charAt(8);
+        document.write("<br />İçindeki 8.karakteri:"+sonuc);
+
+        /*char CodeAt : Kendisine parametre olarak verilen değer doğrultusunda unicode değeri döndürür.*/
+        var metin = "Volkan Alakent";
+        document.write(metin + "<br/>");
+        var sonuc = metin .charCodeAt(0); /*unicode değerleri yazdırır.*/
+        document.write("<br />"+sonuc);    
+        var sonuc = metin .charCodeAt(1);
+        document.write("<br />"+sonuc);   
+        var sonuc = metin .charCodeAt(2);
+        document.write("<br />"+sonuc);   
+        var sonuc = metin .charCodeAt(3);
+        document.write("<br />"+sonuc);   
+        var sonuc = metin .charCodeAt(4);
+        document.write("<br />"+sonuc);
+        var sonuc = metin .charCodeAt(5);
+        document.write("<br />"+sonuc);      
+        /*fromCharCode() : Kendisine parametre olarak verilen utf-8e(evrensel)değerini karakter olarak çevirir.*/
+        /*http://endmemo.com/unicode/unicodeconverter.php unicode çeviren site*/
+        var icerik = String.fromCharCode(70,101,110,101,114,98,97,104,231,101); 
+        document.write("<br />"+ icerik);   
+        var icerik = String.fromCharCode(83,101,108,105,109); 
+        document.write("<br />"+ icerik);   
+        var icerik = String.fromCharCode(43,45,42,); 
+        document.write("<br />"+ icerik);   
+        /*encodeURI() : Değişken içerisindeki özel karakterleri UTF-8 kodlamasında dönüştürerek oluşturur*/
+        /*Kodlamaya dahil değil: ABCDEFGĞIİJKLMNOÖPRSŞTUÜVYZ
+         0123456789 :; /? @ & _~() */
+         var deger = "http://extraeğıtım.com?egıtımsetıadı=Javascrıpt&eğıtımadı" 
+         document.write("<br />"+deger);
+         var sonuc = encodeURI(deger);
+         document.write("<br />"+sonuc);
+         /*decodeUrı()   : Değişken içerisindeki metnin özel karakterlerinin UTF-8 kodlamasına dönüşmüş karakterler çözerek verir.
+          /*Kodlamaya dahil değil: ABCDEFGĞIİJKLMNOÖPRSŞTUÜVYZ
+         0123456789 :; /? @ & _~() */
+         var deger = "http://extraeğıtım.com?egıtımsetıadı=Javascrıpt&eğıtımadı" 
+         document.write("<br />"+deger);
+         var sonuc = decodeURI(deger);
+         document.write("<br />"+sonuc);
+
+         /*encodeURICompenent()   :  UTF 8 kodlamasına dönüştürür.*/
+          /*Kodlamaya dahil değil: ABCDEFGĞIİJKLMNOÖPRSŞTUÜVYZ
+         0123456789 :; /? @ & _~() */
+         var deger = "http://extraeğıtım.com?egıtımsetıadı=Javascrıpt&eğıtımadı"  ;
+         document.write("<br/>"+deger);
+         var sonuc =encodeURIComponent(deger); 
+         document.write(sonuc);   
+         /*decodeURIComponent()   : Değişken içerisindeki metnin özel karakterlerinin Utf-8 kodlamasına çözerek değer döndürür.*/
+                /*Kodlamaya dahil değil: ABCDEFGĞIİJKLMNOÖPRSŞTUÜVYZ
+         0123456789 :; /? @ & _~() */
+         var deger = "http://extraeğıtım.com?egıtımsetıadı=Javascrıpt&eğıtımadı"  ;
+         document.write("<br/>"+deger);
+         var sonuc =encodeURIComponent(deger); 
+         document.write(sonuc);  
+         var sonuc =decodeURIComponent(deger); 
+         document.write(sonuc);  
+        
+        
+        // escape ()  : metni unicoda çeviriyor
+         /*Kodlamaya dahil değil: ABCDEFGĞIİJKLMNOÖPRSŞTUÜVYZ
+         0123456789 :; /? @ & _~() */
+         var deger = "Javascript eğitim seti";
+         var deger = "'/^%&()=?";
+         document.write(deger + "<br />");
+         var sonuc = escape("<br />"+deger);
+         // unescape() : özel karakterleri unicoda döndürür.   
+               /*Kodlamaya dahil değil: ABCDEFGĞIİJKLMNOÖPRSŞTUÜVYZ
+         0123456789 :; /? @ & _~() */         
+         var deger = "Javascript eğitim seti";
+         var deger = "'/^%&()=?";
+         document.write(deger + "<br />");
+         var sonuc = escape("<br />"+deger);
+
+         var geridondur= unescape("<br />"+sonuc);
+
+         // toUpper Case(): Değişken içindeki metnin tamamını büyük harfe döndürür
+         var metin = "selim cınar";
+         document.write(metin + "<br/>");
+
+         var yenimetin = metin.toUpperCase();
+         document.write(yenimetin)
+
+
+        //toLowercase(): Değişken içindeki metnin tamamını küçük harfe döndürür.
+        
+        var metin = "Selim ÇINAR";
+        document.write(metin + "<br />");
+
+        var yenimetin = metin.toLowerCase();
+        document.write("<br />"+yenimetin);
+
+        // toLocaleUppercase () : Değişken içerisindeki metnin tamamını tarayıcı diline göre büyük harfe döndürerek değeri geri döndürür.
+        var metin = "ğüşiöç";
+        document.write(metin + "<br />")
+        
+        var yenimetin = metin.toLocaleUpperCase();
+        document.write("<br />"+yenimetin);
+        
+        // to localLowercase() : Değişken içerisindeki metnin tamamını tarayıcı diline göre küçük harfe dönüştürerek değeri geri döndürür.
+
+ 
+        var metin = "ĞUŞİÖÇ";
+        document.write(metin + "<br />")
+        
+      
+        var yenimetin = metin.toLocaleLowerCase();
+        document.write("<br />"+yenimetin);
+
+        // sub () : değişken içerisindeki metni alt simge haline dönüştürür.
+
+        var formül = "H2O";
+        var birincideger = "H" ; 
+        var ikincideger= "2" ;
+        var ikindegerişlemi = ikincideger.sub();
+        var ucuncudeger= "O" ; 
+        document.write(ikincideger);
+        document.write("<br />"+ikindegerişlemi)    
+        
+
+         // sup () : değişken içerisindeki metni üst simge haline dönüştürür.
+
+         var formül = "m2";
+        var birincideger = "m" ; 
+        var ikincideger1= "2" ;
+        var ustkarakter = ikincideger1.sup(); 
+        document.write(birincideger);
+        document.write("<br />"+ustkarakter)
+        
+        // big () : metni büyük fontlu yazdırır.
+
+        var metin = "Javascript";
+        document.write(metin + "<br />");
+
+        var sonuc = metin.big();
+        document.write("<br />"+sonuc)
+
+</script>
+    </body>
+</html>

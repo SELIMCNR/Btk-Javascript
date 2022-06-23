@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <meta http-equiv="content-type" content="text/html ; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+        /* length: değişken içeriğinin karakter sayısını gösterir.*/
+        var metin="Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili Javascript'tir"
+        document.write(metin + " <br> ");
+        var islem = metin.length;
+        document.write("Karakter sayısı : "+islem );
+
+        /*eval(): kendisine parametre olarak verilen değerleri javascript koduna çevirir.*/
+        var degerbir=10;
+        var degeriki=20;
+
+        var sonucbir=  eval("degerbir + degeriki");
+        document.write("<br />"+ eval(sonucbir)); /*ikinci kullanımı*/
+
+        var  sonuc = eval("10 + 40");
+        document.write("<br/>"+sonuc);
+
+        function deneme() {
+          document.write("Merhaba");
+        }
+        var komut = eval("deneme ()");
+        document.write( komut);
+      
+
+        /*trim() javascripte kelimeler arsında başta veya sondaki boşlukları temizler */
+        var ornek = "    Javascript    ";
+        var icerik = "Eğitim Seti";
+        var sonuc = ornek + " " + icerik ;
+        document.write(ornek + icerik + "<br />");
+        alert(sonuc);
+
+        var islem = ornek.trim();
+        var uyari = islem + " " + icerik;
+        document .write(islem + " " + icerik + "<br />");
+        alert(uyari);
+
+        /*slice () : Kendisine verilecek olan parametreler ile tanınmlanmış değişken içeriği aralığında 
+        bulunan değerleri kopyalayarak yeni içerik oluşturur
+        1.parametre : başlangıç 
+        2.parametre : Bitiş */
+
+        var icerik = "Volkan Alakent Javascript Eğitim Seti";
+        document.write(icerik + "<br />");
+
+        var sonuc = icerik .slice(15,25);
+        var sonuc2= icerik .slice(30);
+        document.write(sonuc);
+        document.write(sonuc2);
+
+
+          /*substring () : Kendisine verilecek olan parametreler ile tanınmlanmış değişken içeriği aralığında 
+        bulunan değerleri kopyalayarak yeni içerik oluşturur
+        1.parametre : başlangıç 
+        2.parametre : Bitiş */
+        var metin = "Javascript Eğitim Seti";
+        document.write(metin + "<br />");
+
+        var sonuc3 = metin.substring(11,17); /*17,11 = 11,17 substringde*/
+        document.write(sonuc3);
+        
+          /*substr () : Kendisine verilecek olan parametreler ile tanınmlanmış değişken içeriği aralığında 
+        bulunan değerleri kopyalayarak yeni içerik oluşturur, en çok kullanılan
+        1.parametre : başlangıç 
+        2.parametre : Bitiş */
+        var metin = "Javascript Eğitim Seti";
+        document.write(metin + "<br />");
+
+        var sonuc4 = metin.substr(-15,6); /*17,11 = 11,17 substringde -15 sondan 15 . nden başlar*/
+        document.write(sonuc4);
+
+
+        /* concat() : Üzerinde çalışılan değişkenler parametrik olarak verilen değişken veya değişkenleri dahil 
+        ederek yeni bir içerik oluşturur.Oluşturduğu değeri geriye döndürür.*/
+
+        var bir = "Volkan ";
+        var iki = "Alakent";
+        var uc = "Javascript";
+        var dort = "Eğitim";
+        var bes = "Seti";
+
+        document.write(bir + "<br />");
+        document.write(iki + "<br />");
+        document.write(uc + "<br />");
+        document.write(dort + "<br  />");
+        document.write(bes + "<br />");
+        document.write(bes + "<br/>");
+
+        var sonuc = bir.concat(iki,uc,dort,bes);
+        document.write(sonuc + " <br />");
+        /* repeat () : Kendisine parametre olarak verilen değer doğrultusunda  */
+
+        var metin1 = "Javascript";
+        document.write(metin + "<br />");
+
+        var islem = metin1.repeat(200);
+        document.write( "<br />"+islem);
+
+        /*toString() -- : Değişken içeriğini String (metin) veri türüne çevirir.  */
+        var deger1 = 5;
+        document.write(deger1 + "<br /> <br />");
+        document.write(typeof(deger1) + "<br /> <br /> ")
+
+        var sonuc1 = deger.toString();
+        document.write(sonuc1 + "<br />");
+        document.write(typeof(sonuc1) + "<br /> ");
+
+      
+       
+
+
+    </script>
+  </body>
+</html>

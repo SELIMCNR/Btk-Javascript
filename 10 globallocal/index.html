@@ -1,0 +1,40 @@
+        <!DOCTYPE html>
+        <html lang="tr-TR">
+          <head>
+            <meta http-equiv="content-type" content="text/html ; charset=utf-8" />
+            <link type="text/css" rel="stylesheet" href="" />
+            <title>Javascript</title>
+          </head>
+          <body>
+        <script type="text/javascript" language="javascript">
+            /*global alan*/
+            {
+             /*   local alan */
+            }
+            /*global alan*/
+
+            { /*local alan*/
+                {
+                    /*local alan*/
+                }
+            }
+            var isim="Selim";
+            let is="sel"; /*local alan letde global değil*/
+            const is1="sel"; /*const: sabit*/
+            if(true){
+                /*Local alan çalışır*/
+                isim="Hakan";
+                let is="fel";
+                document.writeln(isim);
+                document.write(is)
+            }
+            document.write(isim);
+            document.write(is);
+
+           var tr,fb;
+            document.write(tr)
+            document.write(fb +"<br\>")
+
+        </script>
+    </body>
+</html>

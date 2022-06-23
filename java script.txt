@@ -1,0 +1,4 @@
+<p id="demo"></p>
+		<script type="text/javascript"> const club ={type:"Fiat",model:"500",color:"white"]; let name ="Selim" ;
+		let x =5+9;var y =5*6;  document.getElementById("club").innerHTML= x;</script>
+		<script type="text/javascript"> window.alert("Hello") ;</script>
