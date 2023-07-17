@@ -289,6 +289,47 @@ else{
     document.write("pek iyi")
 }
 
-var yas ;
-yas = prompt("Yaşınız:");
-yas = Number(yas);
+var yas1 ;
+yas1 = prompt("Yaşınız:");
+yas1 = Number(yas1);
+if(yas1<2) {
+    alert("Bebek");
+}
+else if(yas1<12){
+    alert("Çocuk");
+}
+else if(yas1 <42){
+    alert("Genç");
+}
+else if(yas1<62){
+    alert("Yetişkin");
+}
+else {
+    alert("İhtiyar");
+}
+
+//Pozitif sayilarin karesini alma
+var sayiKare,KareS;
+sayiKare = prompt("Sayı: ");
+
+if(sayiKare<0){
+    alert("Sayi Negatif!!!");
+}
+else{
+    KareS=sayiKare*sayiKare;
+    alert("Kare = "+KareS);
+}
+
+
+//Dairenin Alanı ve Çevresi 
+var r125,alan125,cevre125;
+r125 = prompt("Yarıçap: ");
+
+if(r125<0){
+    alert("Yarıçap negatif");
+}
+else{
+    alan125 = 3.14 * r125*r125;
+    cevre125 =2*3.14*r125;
+    alert("Alan="+alan+"Cevre="+cevre125);
+}
