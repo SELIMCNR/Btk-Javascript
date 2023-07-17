@@ -333,3 +333,63 @@ else{
     cevre125 =2*3.14*r125;
     alert("Alan="+alan+"Cevre="+cevre125);
 }
+
+//İki sayıdan büyük olanı bulma
+
+var xz , zx;
+xz = prompt("Xz : ");
+
+zx = prompt("Zx: ");
+
+if(xz>zx){
+    alert("Xz büyük");
+}
+else {
+    alert("Yz büyük");
+}
+
+//Girilen iki sayının durumu
+var s12,s21;
+
+s12 = prompt("S12 : ");
+s21 = prompt("S21:  ");
+
+if(s12==s21){
+    alert("S12=s21");
+}
+else if(s12<s21){
+    alert("S21 büyük");
+}
+else{
+    alert("S12 büyük");
+}
+
+// geçti kaldı programı
+var n1 , n2,ort ;
+n1 = Number(prompt("N1: "));
+n2 = Number(prompt("N2: "));
+ort=(n1+n2)/2;
+
+if(ort<50){
+    alert("Ortalama = "+ort+"Kaldı ...");
+}
+else{
+    alert("Ortalama = "+ort+"Geçti ...");
+}
+
+var day;
+// Switch-Case
+switch(new Date().getDay()){
+    case 0:
+     day="Sunday";
+     break;
+    case 1:
+     day = "Monday";
+     break;   
+    case 2:
+     day = "Tuesday";
+     break;
+    case 3 :
+     day = "Thursday";
+     break;
+}
