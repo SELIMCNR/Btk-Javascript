@@ -393,3 +393,32 @@ switch(new Date().getDay()){
      day = "Thursday";
      break;
 }
+
+//Ödev1 iki vize bir final ortalaması
+var vize1,vize2,final1,durum;
+vize1 = Number(prompt("Vize1"));
+vize2 = Number(prompt("Vize2"));
+final1 = Number(prompt("final1"));
+
+durum = (0.4(vize1+vize2))+(final1*0.6);
+
+if(durum>50){
+    document.write("Geçti");
+}
+else {
+    document.write("Kaldı");
+}
+
+var sıcaklık =50;
+if(sıcaklık<0){
+    document.write("Dondurucu");
+}
+else if (sıcaklık<15){
+    document.write("Soğuk");
+}
+else if(sıcaklık<25){
+    document.write("Ilık");
+}
+else{
+    document.write("Sıcak");
+}
