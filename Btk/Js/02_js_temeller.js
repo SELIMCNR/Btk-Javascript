@@ -275,3 +275,20 @@ else{
 }
 
 //
+var ort5 = Number(prompt("ortalama"));
+if(ort5<50){
+    document.write("Kaldı!!");
+}
+else if(ort5<=65){
+    document.write("orta");
+}
+else if(ort5<=80){
+    document.write("iyi");
+}
+else{
+    document.write("pek iyi")
+}
+
+var yas ;
+yas = prompt("Yaşınız:");
+yas = Number(yas);
